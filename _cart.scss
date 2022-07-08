@@ -1,0 +1,240 @@
+@import 'var';
+
+.top_cart {
+    height: 400px;
+    background-image: url(img/topcart.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 64px;
+}
+
+.title_big {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: $color-text-w;
+    padding-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+    &_content {
+        grid-column: span 8;
+    }
+
+    &_name_box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: $color-text-b;
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &_button_box {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    &_item_name {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $color-text-b;
+    }
+
+    &_item_text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-text-small;
+    }
+
+    &_item_price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #050505;
+    }
+
+    &_left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &_input {
+        box-sizing: border-box;
+        background: #F7F6F6;
+        border-radius: 6px;
+        width: 71px;
+        height: 51px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border: none;
+        font-weight: 400;
+    }
+
+    &_button {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-color: $color-text-w;
+        color: #020202;
+        box-sizing: border-box;
+        border: 1px solid $color-text-b;
+        border-radius: 50px;
+        width: 290px;
+        height: 41px;
+
+        &:hover {
+            background-color: $color-text-b;
+            color: $color-text-w;
+            transition: 0.3s;
+        }
+
+        &_box {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    &_form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        grid-column: span 4;
+        width: 379px;
+    }
+
+    &_form_title {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $color-text-b;
+        margin-top: 42px;
+        padding-bottom: 35px;
+        justify-content: space-around;
+    }
+
+    &_form_input_box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 44px;
+        padding-left: 28px;
+    }
+
+    &_form_input {
+        background: #F7F6F6;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+        width: 288px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: $color-text-b;
+        font-family: 'Montserrat';
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    &_form_price {
+        display: flex;
+        justify-content: center;
+        padding-top: 64px;
+        padding-bottom: 28px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $color-text-b;
+    }
+
+    &_form_button_box {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &_form_button {
+        width: 290px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid #040404;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $color-text-b;
+        justify-content: center;
+        font-family: 'Montserrat';
+        animation: form_button 2s ease-out 2s infinite normal forwards;
+    }
+}
+
+.cart_item_button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 210%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+    background-color: $color-text-w;
+    border: none;
+}
+
+.cart_item_button_box {
+    display: flex;
+    gap: 30;
+}

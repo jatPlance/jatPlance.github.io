@@ -1,0 +1,157 @@
+@import 'var';
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header {
+        padding-top: 32px;
+        border-bottom: none;
+        &_input {
+            display: none;
+        }
+    }
+    .menu {
+        display: none;
+        &_mob {
+            display: flex;
+            gap: 32px;
+        }
+    }
+    .logo {
+        &_img {
+            width: 99px;
+        }
+    }
+    .top {
+        &_section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_title {
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            margin-top: 48px;
+        }
+        &_subtitle {
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+        }
+    }
+    .link {
+        font-size: 14px;
+    }
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        &_content {
+            gap: 16px;
+        }
+        &_item {
+            grid-column: 1/-1;
+            height: 374px;
+            font-size: 28px;
+            line-height: 34px;
+            &_big {
+                height: 243px;
+            }
+        }
+        &_title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    .product {
+        width: 100%;
+        &_box {
+            margin-top: 32px;
+            &_title {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+        &_name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .price1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .price2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .catalog_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .link_box {
+        margin-top: 36px;
+        margin-bottom: 32px;
+    }
+    .footer {
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+    }
+    .cat {
+        &_nav {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &_link_box {
+            margin-bottom: 32px;
+        }
+    }
+    .title_big {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .cart {
+        grid-template-columns: repeat(4, 1fr);
+        &_content {
+            grid-column: 1/-1;
+        }
+        &_name_box {
+            display: none;
+        }
+        &_left_img {
+            display: none;
+        }
+        &_item {
+            display: flex;
+            &_name {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &_text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &_price {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        &_button {
+            width: 163px;
+            height: 37px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &_form {
+            width: 100%;
+            margin-top: 48px;
+        }
+    }
+}
